@@ -1,6 +1,6 @@
 .container {
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -35,8 +35,7 @@
 }
 
 .content {
-  margin-left: 200px;
-  padding: 40px;
+  padding: 40px 0 0 240px;
 }
 
 .isActive {
@@ -53,16 +52,15 @@
     background: white;
     border-right: none;
     border-bottom: 1px solid black;
-    padding: 10px;
     flex-direction: row;
     justify-content: space-around;
+    padding: 20px 0;
 
     a {
-      padding: 10px 0;
+      padding: 0;
     }
   }
   .content {
-    margin-left: 0;
-    margin-top: 30px;
+    padding: 70px 20px 0 20px;
   }
 }

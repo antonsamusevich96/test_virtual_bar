@@ -14,7 +14,7 @@ const CocktailIngredients = ({ drink }: IProps) => {
       <h2>List of Indigents</h2>
       <div className={styles.list}>
         {ingredients.map((el) => (
-          <div key={el[0]}>
+          <div key={el[2]}>
             {el[0]} {el[1]}
           </div>
         ))}
