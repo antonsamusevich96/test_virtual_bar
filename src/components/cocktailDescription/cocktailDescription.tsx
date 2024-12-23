@@ -1,9 +1,9 @@
-import React from 'react'
-import styles from './styles.module.scss'
-import { IDrink } from '../../types'
+import React from "react";
+import styles from "./styles.module.scss";
+import { IDrink } from "../../types";
 
 interface IProps {
-  drink: IDrink
+  drink: IDrink;
 }
 
 const CocktailDescription = ({ drink }: IProps) => {
@@ -19,9 +19,14 @@ const CocktailDescription = ({ drink }: IProps) => {
           <div>{drink!.strInstructions}</div>
         </div>
       </div>
-      <img className={styles.image} loading={'lazy'} src={drink!.strDrinkThumb} alt={'cocktail image'} />
+      <img
+        className={styles.image}
+        loading={"lazy"}
+        src={drink!.strDrinkThumb}
+        alt={"cocktail image"}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default CocktailDescription
+export default CocktailDescription;

@@ -6,8 +6,8 @@ export const getKeyPairs = <T extends object>(
   return Object.entries(obj)
     .filter(([key, value]) => key.startsWith(keyPrefix1) && value != null)
     .map(([key, value1]) => {
-      const index = key.replace(keyPrefix1, '')
-      const value2 = obj[`${keyPrefix2}${index}` as keyof T]
-      return [value1, value2]
-    })
-}
+      const index = key.replace(keyPrefix1, "");
+      const value2 = obj[`${keyPrefix2}${index}` as keyof T];
+      return [value1, value2];
+    });
+};
